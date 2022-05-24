@@ -15,6 +15,7 @@
 		0F425480283ABED2004416B5 /* Rick_and_MorteyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42547F283ABED2004416B5 /* Rick_and_MorteyUITestsLaunchTests.swift */; };
 		0FB35117283AC13A005160DC /* AllCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB35116283AC13A005160DC /* AllCharactersViewController.swift */; };
 		0FC9C301283C117C00399C55 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC9C300283C117C00399C55 /* Protocols.swift */; };
+		0FD4F125283CD71900C56743 /* AllCharactersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4F124283CD71900C56743 /* AllCharactersPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0F42547F283ABED2004416B5 /* Rick_and_MorteyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_and_MorteyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0FB35116283AC13A005160DC /* AllCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersViewController.swift; sourceTree = "<group>"; };
 		0FC9C300283C117C00399C55 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		0FD4F124283CD71900C56743 /* AllCharactersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				0FB35116283AC13A005160DC /* AllCharactersViewController.swift */,
 				0FC9C300283C117C00399C55 /* Protocols.swift */,
+				0FD4F124283CD71900C56743 /* AllCharactersPresenter.swift */,
 			);
 			path = AllCharacters;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD4F125283CD71900C56743 /* AllCharactersPresenter.swift in Sources */,
 				0FC9C301283C117C00399C55 /* Protocols.swift in Sources */,
 				0FB35117283AC13A005160DC /* AllCharactersViewController.swift in Sources */,
 				0F42545D283ABECF004416B5 /* AppDelegate.swift in Sources */,
