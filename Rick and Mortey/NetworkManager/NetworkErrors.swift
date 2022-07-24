@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import UIKit
+
+enum NetworkError: String, Error {
+   
+    case urlError  = "invalid URL"
+    
+    case responceError = "responce error"
+        
+    case decodeError = "couldn't parse JSON"
+
+}

@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3B5E0528492C260090A76A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5E0428492C260090A76A /* Character.swift */; };
+		0F3B5E0728492E470090A76A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5E0628492E470090A76A /* NetworkManager.swift */; };
+		0F3B5E09284934B70090A76A /* AllCharactersConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5E08284934B70090A76A /* AllCharactersConfigurator.swift */; };
 		0F42545D283ABECF004416B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42545C283ABECF004416B5 /* AppDelegate.swift */; };
 		0F425466283ABED1004416B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F425465283ABED1004416B5 /* Assets.xcassets */; };
 		0F425469283ABED1004416B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F425467283ABED1004416B5 /* LaunchScreen.storyboard */; };
 		0F425474283ABED2004416B5 /* Rick_and_MorteyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F425473283ABED2004416B5 /* Rick_and_MorteyTests.swift */; };
 		0F42547E283ABED2004416B5 /* Rick_and_MorteyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42547D283ABED2004416B5 /* Rick_and_MorteyUITests.swift */; };
 		0F425480283ABED2004416B5 /* Rick_and_MorteyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42547F283ABED2004416B5 /* Rick_and_MorteyUITestsLaunchTests.swift */; };
+		0F5928E9284FD22200BF8F7E /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5928E8284FD22200BF8F7E /* NetworkErrors.swift */; };
 		0FB35117283AC13A005160DC /* AllCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB35116283AC13A005160DC /* AllCharactersViewController.swift */; };
+		0FC561EB2847DB8700F15FAD /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC561EA2847DB8700F15FAD /* CharacterCell.swift */; };
 		0FC9C301283C117C00399C55 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC9C300283C117C00399C55 /* Protocols.swift */; };
+		0FCB2A05284CB687009DA357 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCB2A04284CB687009DA357 /* SDWebImage */; };
+		0FCB2A07284CB687009DA357 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0FCB2A06284CB687009DA357 /* SDWebImageMapKit */; };
 		0FD4F125283CD71900C56743 /* AllCharactersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4F124283CD71900C56743 /* AllCharactersPresenter.swift */; };
+		0FD4F127283D083100C56743 /* AllCharactersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4F126283D083100C56743 /* AllCharactersRouter.swift */; };
+		0FD4F129283D085100C56743 /* AllCharactersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4F128283D085100C56743 /* AllCharactersInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F3B5E0428492C260090A76A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		0F3B5E0628492E470090A76A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0F3B5E08284934B70090A76A /* AllCharactersConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersConfigurator.swift; sourceTree = "<group>"; };
 		0F425459283ABECF004416B5 /* Rick and Mortey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick and Mortey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F42545C283ABECF004416B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F425465283ABED1004416B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,9 +58,13 @@
 		0F425479283ABED2004416B5 /* Rick and MorteyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rick and MorteyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F42547D283ABED2004416B5 /* Rick_and_MorteyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_and_MorteyUITests.swift; sourceTree = "<group>"; };
 		0F42547F283ABED2004416B5 /* Rick_and_MorteyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_and_MorteyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0F5928E8284FD22200BF8F7E /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		0FB35116283AC13A005160DC /* AllCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersViewController.swift; sourceTree = "<group>"; };
+		0FC561EA2847DB8700F15FAD /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		0FC9C300283C117C00399C55 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		0FD4F124283CD71900C56743 /* AllCharactersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersPresenter.swift; sourceTree = "<group>"; };
+		0FD4F126283D083100C56743 /* AllCharactersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersRouter.swift; sourceTree = "<group>"; };
+		0FD4F128283D085100C56743 /* AllCharactersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FCB2A07284CB687009DA357 /* SDWebImageMapKit in Frameworks */,
+				0FCB2A05284CB687009DA357 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F3B5E0328492C110090A76A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F3B5E0428492C260090A76A /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0F425450283ABECF004416B5 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +125,7 @@
 		0F42545B283ABECF004416B5 /* Rick and Mortey */ = {
 			isa = PBXGroup;
 			children = (
+				0F5928E7284FD20500BF8F7E /* NetworkManager */,
 				0FB35114283AC0FA005160DC /* Modules */,
 				0F42545C283ABECF004416B5 /* AppDelegate.swift */,
 				0F425465283ABED1004416B5 /* Assets.xcassets */,
@@ -125,6 +152,15 @@
 			path = "Rick and MorteyUITests";
 			sourceTree = "<group>";
 		};
+		0F5928E7284FD20500BF8F7E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				0F5928E8284FD22200BF8F7E /* NetworkErrors.swift */,
+				0F3B5E0628492E470090A76A /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
 		0FB35114283AC0FA005160DC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,11 +172,24 @@
 		0FB35115283AC110005160DC /* AllCharacters */ = {
 			isa = PBXGroup;
 			children = (
+				0F3B5E0328492C110090A76A /* Model */,
+				0FC561E92847DB6E00F15FAD /* Cell */,
 				0FB35116283AC13A005160DC /* AllCharactersViewController.swift */,
-				0FC9C300283C117C00399C55 /* Protocols.swift */,
 				0FD4F124283CD71900C56743 /* AllCharactersPresenter.swift */,
+				0FD4F128283D085100C56743 /* AllCharactersInteractor.swift */,
+				0FD4F126283D083100C56743 /* AllCharactersRouter.swift */,
+				0FC9C300283C117C00399C55 /* Protocols.swift */,
+				0F3B5E08284934B70090A76A /* AllCharactersConfigurator.swift */,
 			);
 			path = AllCharacters;
+			sourceTree = "<group>";
+		};
+		0FC561E92847DB6E00F15FAD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0FC561EA2847DB8700F15FAD /* CharacterCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +208,10 @@
 			dependencies = (
 			);
 			name = "Rick and Mortey";
+			packageProductDependencies = (
+				0FCB2A04284CB687009DA357 /* SDWebImage */,
+				0FCB2A06284CB687009DA357 /* SDWebImageMapKit */,
+			);
 			productName = "Rick and Mortey";
 			productReference = 0F425459283ABECF004416B5 /* Rick and Mortey.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +284,9 @@
 				Base,
 			);
 			mainGroup = 0F425450283ABECF004416B5;
+			packageReferences = (
+				0FCB2A03284CB687009DA357 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 0F42545A283ABECF004416B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -273,10 +329,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3B5E0728492E470090A76A /* NetworkManager.swift in Sources */,
+				0FD4F129283D085100C56743 /* AllCharactersInteractor.swift in Sources */,
 				0FD4F125283CD71900C56743 /* AllCharactersPresenter.swift in Sources */,
+				0FD4F127283D083100C56743 /* AllCharactersRouter.swift in Sources */,
+				0F3B5E09284934B70090A76A /* AllCharactersConfigurator.swift in Sources */,
+				0FC561EB2847DB8700F15FAD /* CharacterCell.swift in Sources */,
 				0FC9C301283C117C00399C55 /* Protocols.swift in Sources */,
 				0FB35117283AC13A005160DC /* AllCharactersViewController.swift in Sources */,
+				0F5928E9284FD22200BF8F7E /* NetworkErrors.swift in Sources */,
 				0F42545D283ABECF004416B5 /* AppDelegate.swift in Sources */,
+				0F3B5E0528492C260090A76A /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +673,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0FCB2A03284CB687009DA357 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0FCB2A04284CB687009DA357 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FCB2A03284CB687009DA357 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		0FCB2A06284CB687009DA357 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FCB2A03284CB687009DA357 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0F425451283ABECF004416B5 /* Project object */;
 }

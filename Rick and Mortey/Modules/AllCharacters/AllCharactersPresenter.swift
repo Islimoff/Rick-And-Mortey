@@ -8,6 +8,20 @@
 import Foundation
 
 
-class AllCharactersPresenter: AllCharactersViewPresenterToView {
+class AllCharactersPresenter: AllCharactersViewToPresenter, AllCharactersInteractorToPresenter {
     
+    var view: AllCharactersPresenterToView?
+    
+    var characters = [Character]()
+    
+    var interactor: AllCharactersPresenterToInteractor?
+    
+    func didLoad() {
+        interactor?.getAllCharacters()
+    }
+    
+    func getAllCharactersWithSuccess(characters: [Character]) {
+        self.characters = characters
+        view?.reloadData()
+    }
 }

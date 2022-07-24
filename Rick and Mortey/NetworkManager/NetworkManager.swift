@@ -8,18 +8,21 @@
 import Foundation
 
 class NetworkManager {
+
+    private let baseUrlString = "https://rickandmortyapi.com/api/"
     
-    let baseUrlString = "https://rickandmortyapi.com/api/"
+    private let session = URLSession.shared
     
-    let session = URLSession.shared
-    
-    let decoder = JSONDecoder()
+    private let decoder = JSONDecoder()
     
     func getDataWithComplition <T: Codable> (with method: String,
                                              expectedType: T.Type,
-                                             complition: @escaping (Result<T, Error>) ->()) {
+                                             complition: @escaping (Result<T,Error>) ->()) {
         
-        guard let url = URL(string: baseUrlString + method) else {return}
+        guard let url = URL(string: baseUrlString + method) else {
+            complition(.failure(NetworkError.urlError))
+            return
+        }
         
         session.dataTask(with: url) { [weak self] data, response, error in
             if let response = response as? HTTPURLResponse {
@@ -30,7 +33,10 @@ class NetworkManager {
                 return
             }
             if let parceData = data {
-                guard let decoded = try? self?.decoder.decode(T.self, from: parceData) else {return}
+                guard let decoded = try? self?.decoder.decode(T.self, from: parceData) else {
+                    complition(.failure(NetworkError.decodeError))
+                    return
+                }
                 complition(.success(decoded))
             }
         }.resume()

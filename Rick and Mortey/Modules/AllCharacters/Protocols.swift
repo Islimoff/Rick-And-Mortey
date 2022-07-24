@@ -7,28 +7,34 @@
 
 import Foundation
 
-protocol AllCharactersViewPresenterToView: AnyObject {
+protocol AllCharactersPresenterToView: AnyObject {
     
+    func reloadData()
 }
 
 protocol AllCharactersViewToPresenter: AnyObject {
     
+    var view: AllCharactersPresenterToView? { get set }
+    
+    var characters: [Character] { get }
+    
     func didLoad()
 }
 
-protocol AllCharactersViewInteractorToPresenter: AnyObject {
+protocol AllCharactersInteractorToPresenter: AnyObject {
     
+    func getAllCharactersWithSuccess(characters: [Character])
 }
 
-protocol AllCharactersViewPresenterToInteractor: AnyObject {
+protocol AllCharactersPresenterToInteractor: AnyObject {
     
     func getAllCharacters()
 }
 
-protocol AllCharactersViewRouterToPresenter: AnyObject {
+protocol AllCharactersRouterToPresenter: AnyObject {
     
 }
 
-protocol AllCharactersViewPresenterToRouter: AnyObject {
+protocol AllCharactersPresenterToRouter: AnyObject {
     
 }
